@@ -1,0 +1,232 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Shantanu}{Khandelwal}{ \urlstyle{same}\url{http://www.shantanukhandelwal.com} \\
+\href{mailto:shantanu561993@gmail.com}{shantanu561993@gmail.com} | +91-953089-5038
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{UIET,Panjab University}
+\descript{BE in Information Technology}
+\location{Expected May 2015 | Chandigarh, IN \\ Cum. GPA: 7.19 | \%age-72}
+\sectionsep
+
+
+\subsection{Bakshi's Springdales}
+\subsection{School}
+\descript{Senior Secondary}
+\location{2011|Kota,India}
+
+\location{ \%age: X-84 | XII-82}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/shantanu561993}{\custombold{shantanu561993}} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{UnderGraduate}
+System Software \\
+Operating System \\
+Data Structures \\
+Database \\
+Computer Graphics\\
+Network Security\\
+Network Cryptography\\
+OOPS\\
+Web Technologies\\
+Computer Architecture \\
+Software Engineering
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+C++ \textbullet{}   Python \\ 
+\location{Over 1000 lines:}
+C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{}  Shell \textbullet{} HTML \\
+\location{Familiar:}
+JAVA \textbullet{} PERL \textbullet{}  MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{CDAC}
+\descript{| Network Security + Programming Intern }
+\location{June 2014 - July 2014| Maharashtra , Pune}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Automate Generation of firewall Rules using PHP + HTML
+\item Website Penetration Testing 
+\item Network Penetration Testing by making own tools in Python 
+\item Implementation of Snort IDS/IPS in virtual environment
+\item Layer 7 Packet filtering using Iptables
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{AISECT 2014}
+\descript{| Python \textbullet{} File Sharing \textbullet{} Peer-to-Peer Network   }
+\location{File Sharing in Peer to Peer Networks Using Python}
+Developed a cross platform file sharing script . Advantages include no need of pendrive , no transfer of virus , cross platform , use of network to share files , sharing of folder without hassles of shoulder surfing,High speed transfer , Client do not need a receiving software . Developed in python using SimpleHTTPServer
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications} 
+\begin{tabular}{rll}
+2014	     & Red Hat Certified System Administrator  & 140-026-204\\
+2014	     & Red Hat Certified Engineer  & 140-026-204\\
+2013	     & Web Development (PHP+HTML+CSS+JAVASCRIPT)  & SLR Institute\\
+2013	     & Core Java  & SLR Institute\\
+2012	     & Certified Ethical Hacker  & TCIL-IT Chandigarh\\
+
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{No Pendrive}
+\descript{| Python \textbullet{} File Sharing \textbullet{} Peer-to-Peer Network   }
+\location{File Sharing in Peer to Peer Networks Using Python}
+Developed a file sharing script using python . The script is cross platform and can be used to share files between two users. The advantages include no transfer of virus's and user friendliness .  \\
+\runsubsection{NetScapy}
+\descript{| Python \textbullet{} Network Pentesting \textbullet{} Packet Crafting   }
+\location{Network Penetration Testing Tool}
+Developing a Network Penetration testing module leveraging the power of Scapy and crafting the packets by manipulating the TCP stack.\\
+\runsubsection{BTHack}
+\descript{| C++   }
+\location{Penetration Testing Tool}
+Developed a wrapper around many tools which comes in Backtrack operating system ,helping many new budding penetration tester's who do not have basics of linux .\\
+\sectionsep
+\section{Workshops Given }
+\begin{tabular}{rll}
+2014	     & Linux Basics  & 50+ students\\
+2013	     & Web Development  & 80+students\\
+2013	     & 8thical Hekar (Ethical Hacking)   & 50+ students\\
+\end{tabular}
+\sectionsep
+\section{Activities }
+\begin{tabular}{rll}
+ & Pinned as Rotaract 3080 Web Developer  & \\
+ & Organized and Participated in many College Events & \\
+
+
+\end{tabular}
+\sectionsep
+\end{minipage} 
+\end{document}  \documentclass[]{article}
